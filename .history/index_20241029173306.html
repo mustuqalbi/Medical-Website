@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Services</title>
+<title>Dr PRO</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Dr PRO template project">
@@ -11,9 +11,9 @@
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="plugins/image-comparison-slider-master/style.css">
-<link rel="stylesheet" type="text/css" href="styles/services.css">
-<link rel="stylesheet" type="text/css" href="styles/services_responsive.css">
+<link href="plugins/jquery-datepicker/jquery-ui.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 </head>
 <body>
 
@@ -35,9 +35,9 @@
 			<!-- Main Navigation -->
 			<nav class="main_nav">
 				<ul class="d-flex flex-row align-items-center justify-content-start">
-					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="index.html">Home</a></li>
 					<li><a href="about.html">About us</a></li>
-					<li class="active"><a href="services.html">Services</a></li>
+					<li><a href="services.html">Services</a></li>
 					<li><a href="blog.html">News</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
@@ -98,17 +98,263 @@
 
 	<!-- Home -->
 
-	<div class="home d-flex flex-column align-items-start justify-content-end">
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/services.jpg" data-speed="0.8"></div>
-		<div class="home_overlay"><img src="images/home_overlay.png" alt=""></div>
-		<div class="home_container">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="home_content">
-							<div class="home_title">Services</div>
-							<div class="home_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+	<div class="home">
+
+		<!-- Home Slider -->
+		<div class="home_slider_container">
+			<div class="owl-carousel owl-theme home_slider">
+				
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="background_image" style="background-image:url(images/home_slider.jpg)"></div>
+					<div class="home_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_content">
+										<div class="home_subtitle">#1 Plastic Surgery Clinic</div>
+										<div class="home_title">Love the new you</div>
+										<div class="home_text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+										</div>
+										<div class="home_buttons d-flex flex-row align-items-center justify-content-start">
+											<div class="button button_1 trans_200"><a href="#">read more</a></div>
+											<div class="button button_2 trans_200"><a href="#">make an appointment</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
+					</div>
+				</div>
+
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="background_image" style="background-image:url(images/home_slider.jpg)"></div>
+					<div class="home_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_content">
+										<div class="home_subtitle">#1 Plastic Surgery Clinic</div>
+										<div class="home_title">Love the new you</div>
+										<div class="home_text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+										</div>
+										<div class="home_buttons d-flex flex-row align-items-center justify-content-start">
+											<div class="button button_1 trans_200"><a href="#">read more</a></div>
+											<div class="button button_2 trans_200"><a href="#">make an appointment</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="background_image" style="background-image:url(images/home_slider.jpg)"></div>
+					<div class="home_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_content">
+										<div class="home_subtitle">#1 Plastic Surgery Clinic</div>
+										<div class="home_title">Love the new you</div>
+										<div class="home_text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+										</div>
+										<div class="home_buttons d-flex flex-row align-items-center justify-content-start">
+											<div class="button button_1 trans_200"><a href="#">read more</a></div>
+											<div class="button button_2 trans_200"><a href="#">make an appointment</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Home Slider Dots -->
+
+			<div class="home_slider_dots">
+				<ul id="home_slider_custom_dots" class="home_slider_custom_dots d-flex flex-row align-items-center justify-content-start">
+					<li class="home_slider_custom_dot trans_200 active"></li>
+					<li class="home_slider_custom_dot trans_200"></li>
+					<li class="home_slider_custom_dot trans_200"></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Intro -->
+
+	<div class="intro">
+		<div class="container">
+			<div class="row">
+
+				<!-- Intro Content -->
+				<div class="col-lg-6 intro_col">
+					<div class="intro_content">
+						<div class="section_title_container">
+							<div class="section_subtitle">This is Dr Pro</div>
+							<div class="section_title"><h2>Welcome to our Clinic</h2></div>
+						</div>
+						<div class="intro_text">
+							<p>Integer aliquet congue libero, eu gravida odio ultrices ut. Etiam ac erat ut enim maximus accumsan vel ac nisl. Duis feugiat bibendum orci, non elementum urna vestibulum in. Nulla facilisi. Nulla egestas vel lacus sed interdum. Sed mollis, orci elementum eleifend tempor, nunc libero porttitor tellus, vel pharetra metus dolor.</p>
+						</div>
+						<div class="milestones">
+							<div class="row milestones_row">
+							
+								<!-- Milestone -->
+								<div class="col-md-4 milestone_col">
+									<div class="milestone">
+										<div class="milestone_counter" data-end-value="5000" data-sign-before="+">0</div>
+										<div class="milestone_text">Satisfied Patients</div>
+									</div>
+								</div>
+
+								<!-- Milestone -->
+								<div class="col-md-4 milestone_col">
+									<div class="milestone">
+										<div class="milestone_counter" data-end-value="352">0</div>
+										<div class="milestone_text">Face Liftings</div>
+									</div>
+								</div>
+
+								<!-- Milestone -->
+								<div class="col-md-4 milestone_col">
+									<div class="milestone">
+										<div class="milestone_counter" data-end-value="718">0</div>
+										<div class="milestone_text">Injectibles</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Intro Form -->
+				<div class="col-lg-6 intro_col">
+					<div class="intro_form_container">
+						<div class="intro_form_title">Make an Appointment</div>
+						<form action="#" class="intro_form" id="intro_form">
+							<div class="d-flex flex-row align-items-start justify-content-between flex-wrap">
+								<input type="text" class="intro_input" placeholder="Your Name" required="required">
+								<input type="email" class="intro_input" placeholder="Your E-mail" required="required">
+								<input type="tel" class="intro_input" placeholder="Your Phone" required="required">
+								<select class="intro_select intro_input" required>
+									<option disabled="" selected="" value="">Speciality</option>
+									<option>Speciality 1</option>
+									<option>Speciality 2</option>
+									<option>Speciality 3</option>
+									<option>Speciality 4</option>
+									<option>Speciality 5</option>
+								</select>
+								<select class="intro_select intro_input" required="required">
+										<option disabled="" selected="" value="">Doctor</option>
+										<option>Doctor 1</option>
+										<option>Doctor 2</option>
+										<option>Doctor 3</option>
+										<option>Doctor 4</option>
+										<option>Doctor 5</option>
+									</select>
+								<input type="text" id="datepicker" class="intro_input datepicker" placeholder="Date" required="required">
+							</div>
+							<button class="button button_1 intro_button trans_200">make an appointment</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Why Choose Us -->
+
+	<div class="why">
+		<!-- <div class="background_image" style="background-image:url(images/why.jpg)"></div> -->
+		<div class="container">
+			<div class="row row-eq-height">
+
+				<!-- Why Choose Us Image -->
+				<div class="col-lg-6 order-lg-1 order-2">
+					<div class="why_image_container">
+						<div class="why_image"><img src="images/why_1.jpg" alt=""></div>
+					</div>
+				</div>
+
+				<!-- Why Choose Us Content -->
+				<div class="col-lg-6 order-lg-2 order-1">
+					<div class="why_content">
+						<div class="section_title_container">
+							<div class="section_subtitle">This is Dr Pro</div>
+							<div class="section_title"><h2>Why choose us?</h2></div>
+						</div>
+						<div class="why_text">
+							<p>Odio ultrices ut. Etiam ac erat ut enim maximus accumsan vel ac nisl. Duis feugiat bibendum orci, non elementum urna vestibulum in. Nulla facilisi. Nulla egestas vel lacus sed interdum. Sed mollis, orci elementum eleifend tempor, nunc libero porttitor tellus, vel pharetra metus dolor.</p>
+						</div>
+						<div class="why_list">
+							<ul>
+
+								<!-- Why List Item -->
+								<li class="d-flex flex-row align-items-center justify-content-start">
+									<div class="icon_container d-flex flex-column align-items-center justify-content-center">
+										<div class="icon"><img src="images/icon_1.svg" alt="https://www.flaticon.com/authors/prosymbols"></div>
+									</div>
+									<div class="why_list_content">
+										<div class="why_list_title">Only Top Products</div>
+										<div class="why_list_text">Etiam ac erat ut enim maximus accumsan vel ac nisl</div>
+									</div>
+								</li>
+
+								<!-- Why List Item -->
+								<li class="d-flex flex-row align-items-center justify-content-start">
+									<div class="icon_container d-flex flex-column align-items-center justify-content-center">
+										<div class="icon"><img src="images/icon_2.svg" alt="https://www.flaticon.com/authors/prosymbols"></div>
+									</div>
+									<div class="why_list_content">
+										<div class="why_list_title">The best Doctors</div>
+										<div class="why_list_text">Ac erat ut enim maximus accumsan vel ac</div>
+									</div>
+								</li>
+
+								<!-- Why List Item -->
+								<li class="d-flex flex-row align-items-center justify-content-start">
+									<div class="icon_container d-flex flex-column align-items-center justify-content-center">
+										<div class="icon"><img src="images/icon_3.svg" alt="https://www.flaticon.com/authors/prosymbols"></div>
+									</div>
+									<div class="why_list_content">
+										<div class="why_list_title">Great Feedback</div>
+										<div class="why_list_text">Etiam ac erat ut enim maximus accumsan vel</div>
+									</div>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Call to action -->
+
+	<div class="cta">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="cta_container d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+						<div class="cta_content">
+							<div class="cta_title">Make your appointment today!</div>
+							<div class="cta_text">Etiam ac erat ut enim maximus accumsan vel ac nisl</div>
+						</div>
+						<div class="cta_phone ml-lg-auto">+34 586 778 8892</div>
 					</div>
 				</div>
 			</div>
@@ -223,115 +469,27 @@
 		</div>
 	</div>
 
-	<!-- Before and After -->
+	<!-- Extra -->
 
-	<div class="before_and_after">
+	<div class="extra">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/extra.jpg" data-speed="0.8"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<div class="section_title_container text-center">
-						<div class="section_subtitle">This is Dr Pro</div>
-						<div class="section_title"><h2>Before & After Gallery</h2></div>
-					</div>
-				</div>
-			</div>
-			<div class="row before_and_after_row">
-				<div class="col">
-					<div class="ba_container">
-						<figure class="cd-image-container">
-							<img src="images/before.jpg" alt="Original Image">
-							<span class="cd-image-label" data-type="original"></span>
-
-							<div class="cd-resize-img">
-								<img src="images/after.jpg" alt="Modified Image">
-								<span class="cd-image-label" data-type="modified"></span>
+					<div class="extra_container d-flex flex-row align-items-start justify-content-end">
+						<div class="extra_content">
+							<div class="extra_disc d-flex flex-row align-items-end justify-content-start">
+								<div>30<span>%</span></div>
+								<div>Discount</div>
 							</div>
-
-							<span class="cd-handle"></span>
-						</figure>
-					</div>
-					<div class="ba_text text-center"><p>Nulla facilisi. Nulla egestas vel lacus sed interdum. Sed mollis, orci elementum eleifend tempor, nunc libero porttitor tellus.</p></div>
-					<div class="ba_button_container text-center">
-						<div class="button button_1 ba_button"><a href="#">see gallery</a></div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Prices -->
-
-	<div class="prices">
-		<div class="container">
-			<div class="row">
-				
-				<!-- Price -->
-				<div class="col-lg-6 price_col">
-					<div class="price">
-						<div class="price_title">Breast Augmentation</div>
-						<div class="price_text">
-							<p>Integer aliquet congue libero, eu gravida odio ultrces ut. Etiam ac erat ut enim maximus accumsan vel ac nisl.</p>
+							<div class="extra_title">Only in August</div>
+							<div class="extra_text">
+								<p>Nulla facilisi. Nulla egestas vel lacus sed interdum. Sed mollis, orci elementum eleifend tempor, nunc libero porttitor tellus.</p>
+							</div>
+							<div class="button button_1 extra_link trans_200"><a href="#">read more</a></div>
 						</div>
-						<div class="price_panel">From $3500</div>
 					</div>
 				</div>
-
-				<!-- Price -->
-				<div class="col-lg-6 price_col">
-					<div class="price">
-						<div class="price_title">Otoplasty</div>
-						<div class="price_text">
-							<p>Integer aliquet congue libero, eu gravida odio ultrces ut. Etiam ac erat ut enim maximus accumsan vel ac nisl.</p>
-						</div>
-						<div class="price_panel">From $2000</div>
-					</div>
-				</div>
-
-				<!-- Price -->
-				<div class="col-lg-6 price_col">
-					<div class="price">
-						<div class="price_title">Eyelid Surgery</div>
-						<div class="price_text">
-							<p>Integer aliquet congue libero, eu gravida odio ultrces ut. Etiam ac erat ut enim maximus accumsan vel ac nisl.</p>
-						</div>
-						<div class="price_panel">From $1500</div>
-					</div>
-				</div>
-
-				<!-- Price -->
-				<div class="col-lg-6 price_col">
-					<div class="price">
-						<div class="price_title">Botox</div>
-						<div class="price_text">
-							<p>Integer aliquet congue libero, eu gravida odio ultrces ut. Etiam ac erat ut enim maximus accumsan vel ac nisl.</p>
-						</div>
-						<div class="price_panel">From $200</div>
-					</div>
-				</div>
-
-				<!-- Price -->
-				<div class="col-lg-6 price_col">
-					<div class="price">
-						<div class="price_title">Liposuction</div>
-						<div class="price_text">
-							<p>Integer aliquet congue libero, eu gravida odio ultrces ut. Etiam ac erat ut enim maximus accumsan vel ac nisl.</p>
-						</div>
-						<div class="price_panel">From $5500</div>
-					</div>
-				</div>
-
-				<!-- Price -->
-				<div class="col-lg-6 price_col">
-					<div class="price">
-						<div class="price_title">Hyaluronic Acid</div>
-						<div class="price_text">
-							<p>Integer aliquet congue libero, eu gravida odio ultrces ut. Etiam ac erat ut enim maximus accumsan vel ac nisl.</p>
-						</div>
-						<div class="price_panel">From $350</div>
-					</div>
-				</div>
-
 			</div>
 		</div>
 	</div>
@@ -442,6 +600,13 @@
 				</div>
 			</div>
 		</div>
+		<div class="footer_bar">
+			<div class="container">
+				<div class="row">
+					
+				</div>
+			</div>			
+		</div>
 	</footer>
 </div>
 
@@ -456,8 +621,8 @@
 <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
 <script src="plugins/easing/easing.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="plugins/image-comparison-slider-master/main.js"></script>
-<script src="js/services.js"></script>
+<script src="plugins/jquery-datepicker/jquery-ui.js"></script>
+<script src="js/custom.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
